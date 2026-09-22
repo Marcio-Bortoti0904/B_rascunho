@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --brand-yellow: #FFD600;
+  --bg-dark: #090C10;
+  --card-dark: #0D1117;
+}
+
+html,
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-dark);
+  color: #FFFFFF;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Cores principais */
+
+.bg-brand-yellow {
+  background-color: var(--brand-yellow) !important;
+}
+
+.text-brand-yellow {
+  color: var(--brand-yellow) !important;
+}
+
+.border-brand-yellow {
+  border-color: var(--brand-yellow) !important;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1F2937;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-yellow);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
