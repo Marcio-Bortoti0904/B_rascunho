@@ -1,7 +1,7 @@
 export const eventos = [
   {
     id: 1,
-    imagem: 'src/imagem/evento1.jpeg',
+    imagem: '/src/imagem/evento1.jpeg',
     titulo: 'Empreende Week Summit 2026',
     categoria: 'Inovação',
     data: '05, 06 e 07 de Outubro',
@@ -10,7 +10,7 @@ export const eventos = [
 
   {
     id: 2,
-    imagem: 'src/imagem/evento2.jpeg',
+    imagem: '/src/imagem/evento2.jpeg',
     titulo: 'Recital de Inverno - Folclore Nordestino',
     categoria: 'Cultura',
     data: '03 e 04 de Julho • 20h00',

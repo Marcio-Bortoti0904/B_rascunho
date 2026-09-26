@@ -1,60 +1,57 @@
 <template>
   <aside class="sidebar">
 
-    <img src="/src/imagem/logo.png" alt="BW" height="125" width="125">
-
     <nav class="menu">
 
-      <a href="#" class="menu-item ativo">
+      <RouterLink to="/" class="menu-item">
         <span class="icone">⌂</span>
         <span>Início</span>
-      </a>
+      </RouterLink>
 
-      <a href="#" class="menu-item">
-        <span class="icone">🚌</span>
-        <span>Rotas</span>
-      </a>
-
-      <a href="#" class="menu-item">
-        <span class="icone">🕘</span>
-        <span>Histórico</span>
-      </a>
-
-      <a href="#" class="menu-item">
-        <span class="icone">💳</span>
-        <span>Carteira</span>
-      </a>
-
-      <a href="#" class="menu-item">
-        <span class="icone">🐾</span>
+      <RouterLink to="/mascote" class="menu-item">
+        <span class="icone">☻</span>
         <span>Meu Bichinho</span>
-      </a>
+      </RouterLink>
 
-      <a href="#" class="menu-item">
-        <span class="icone">⭐</span>
+      <RouterLink to="/historico" class="menu-item">
+        <span class="icone">◷</span>
+        <span>Histórico</span>
+      </RouterLink>
+
+      <RouterLink to="/rotas" class="menu-item">
+        <span class="icone">◈</span>
+        <span>Rotas</span>
+      </RouterLink>
+
+      <RouterLink to="/perfil" class="menu-item">
+        <span class="icone"><svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+</svg></span>
+        <span>Perfil</span>
+      </RouterLink>
+
+      <RouterLink to="/pontos" class="menu-item">
+        <span class="icone">☆</span>
         <span>Meus Pontos</span>
-      </a>
+      </RouterLink>
 
-      <a href="#" class="menu-item">
-        <span class="icone">🎭</span>
+      <RouterLink to="/eventos" class="menu-item">
+        <span class="icone">□</span>
         <span>Eventos Culturais</span>
-      </a>
+      </RouterLink>
 
     </nav>
 
-    <div class="menu-inferior">
+    <div class="separador"></div>
 
-      <a href="#" class="menu-item">
-        <span class="icone">👤</span>
-        <span>Editar Perfil</span>
-      </a>
+    <nav class="menu menu-inferior">
 
-      <a href="#" class="menu-item">
+      <RouterLink to="/config" class="menu-item">
         <span class="icone">⚙</span>
         <span>Configurações</span>
-      </a>
+      </RouterLink>
 
-    </div>
+    </nav>
 
   </aside>
 </template>
@@ -62,79 +59,81 @@
 <style scoped>
 
 .sidebar {
-  width: 240px;
-  min-width: 240px;
-  height: 100vh;
+  width: 260px;
+  min-width: 260px;
+
+  min-height: calc(100vh - 40px);
+
+  background-color: #090C10;
+
+  border-right: 1px solid #1F2937;
+
+  padding: 32px 20px;
+  margin: 4px;
 
   box-sizing: border-box;
 
-  background-color: #0D1117;
-  color: white;
-
   display: flex;
   flex-direction: column;
-
-  padding: 24px 16px;
-
-  border-right: 1px solid #1F2937;
-}
-
-.logo {
-  color: #FFD600;
-
-  font-size: 24px;
-  font-weight: 900;
-
-  padding: 0 12px;
-  margin-bottom: 35px;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 .menu-item {
+  height: 48px;
+
   display: flex;
   align-items: center;
+  gap: 14px;
 
-  gap: 12px;
+  padding: 0 16px;
 
-  padding: 12px;
+  border-radius: 12px;
 
-  border-radius: 8px;
+  color: #9CA3AF;
 
-  color: white;
   text-decoration: none;
 
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: 0.2s;
 }
 
 .menu-item:hover {
-  background-color: #1F2937;
+  background-color: #151A21;
+  color: white;
 }
 
-.menu-item.ativo {
+.menu-item.router-link-active {
   background-color: #FFD600;
   color: #090C10;
+  font-weight: 700;
 }
 
 .icone {
-  width: 24px;
+  width: 22px;
 
   display: flex;
   justify-content: center;
+
+  font-size: 20px;
+}
+
+.separador {
+  height: 1px;
+
+  background-color: #1F2937;
+
+  margin: 14px 0;
 }
 
 .menu-inferior {
-  margin-top: auto;
-
-  display: flex;
-  flex-direction: column;
-
-  gap: 8px;
+  margin-top: 0;
 }
 
 </style>
