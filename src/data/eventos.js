@@ -1,7 +1,7 @@
 export const eventos = [
   {
     id: 1,
-    imagem: '/src/imagem/evento1.jpeg',
+    imagem: '/evento1.jpeg',
     titulo: 'Empreende Week Summit 2026',
     categoria: 'Inovação',
     data: '05, 06 e 07 de Outubro',
