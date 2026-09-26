@@ -10,7 +10,7 @@ export const eventos = [
 
   {
     id: 2,
-    imagem: '/src/imagem/evento2.jpeg',
+    imagem: '/evento2.jpeg',
     titulo: 'Recital de Inverno - Folclore Nordestino',
     categoria: 'Cultura',
     data: '03 e 04 de Julho • 20h00',
@@ -19,7 +19,7 @@ export const eventos = [
 
   {
     id: 3,
-    imagem: '/src/imagem/evento3.jpeg',
+    imagem: '/evento3.jpeg',
     titulo: 'Convite Formatura 2026',
     categoria: 'Dança',
     data: '15 de Julho • 20h00',
@@ -28,7 +28,7 @@ export const eventos = [
 
   {
     id: 4,
-    imagem: '/src/imagem/evento4.jpeg',
+    imagem: '/evento4.jpeg',
     titulo: 'Desfile Cívico - Independência',
     categoria: 'Civismo',
     data: '07 de Setembro • 08h00',
@@ -37,7 +37,7 @@ export const eventos = [
 
   {
     id: 5,
-    imagem: '/src/imagem/evento5.jpeg',
+    imagem: '/evento5.jpeg',
     titulo: '10º Festival de Música',
     categoria: 'Música',
     data: '14 a 19 de Setembro',
