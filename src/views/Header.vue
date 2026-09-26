@@ -4,7 +4,7 @@
     <!-- Logo -->
     <div class="logo-area">
       <img
-        src="/src/imagem/logo.png"
+        src="/logo.png"
         alt="Buswork"
         class="logo"
       >
